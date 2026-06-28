@@ -7,7 +7,7 @@ import About from './About';
 //import Footer from './Footer';
 import Login from './Login';
 import Signup from './Signup';
-
+import Dashboard from './Dashboard';
 function Home() {
   return (
     <div>
@@ -15,7 +15,7 @@ function Home() {
       <Carousel/>
        <About/>
       <Services />
-    
+      <Dashboard/>
       
 
     </div>

@@ -104,16 +104,26 @@
     margin: 0;
   }
   
-  .login-forgot {
-    color: #1e6f9f;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  
-  .login-forgot:hover {
-    color: #154e73;
-  }
+ .login-forgot-btn {
+  background: none;
+  border: none;
+  color: #2563eb; /* Adjust color to match your design theme */
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.login-forgot-btn:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Subtle visual cue when the sign-in button is loading */
+.login-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
   
   .login-btn {
     width: 100%;
@@ -152,4 +162,10 @@
   
   .login-switch a:hover {
     text-decoration: underline;
+  }
+  .login-error{
+    padding: 15px;
+    font-size: 18px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }

@@ -11,6 +11,7 @@ import Home from './Home';
 //import Carousel from './Carousel';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
+import Dashboard from './Dashboard';
 function App() {
   return (
       <div className="App">
@@ -22,6 +23,7 @@ function App() {
             <Route path="/about" element={<About/>} />
            <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path='Dashboard' element={<Dashboard/>}/>
           </Routes>
       
         </Router>
